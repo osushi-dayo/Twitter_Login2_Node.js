@@ -2,10 +2,9 @@
 exports.host = "127.0.0.1";
 exports.port = "3000";
 
-//セッション管理にデータベースを使用。
-//mongodが起動していれば.存在しない名前でも自動で新規作成してくれる。
+//セッション管理にredisを使用。
 exports.db_host = "127.0.0.1";// データベースのホスト
-exports.db_port = 6379;
+exports.db_port = 6379;// データベースのポート
 
 //Twitterのトークン
 //アクセストークンはsignin_with_twitterのみの場合は不要
